@@ -2,18 +2,14 @@ package algorithm;
 
 
 import algorithm.arrays.MergeSortClass;
+import algorithm.greedy.leetcode.LeetCode2131;
 
 import static algorithm.arrays.SortColorsClass.SortColor;
 
 public class Main {
     public static void main(String[] args) {
-        int[] arr = {1, 2, 3, 0, 0, 0};
-        int[] arr2 = {4, 5, 6};
-        MergeSortClass mergeSortClass = new MergeSortClass();
+        int a = LeetCode2131.longestPalindrome(new String[]{"ab","ll","ba"});
+        System.out.println(a);
 
-        MergeSortClass.mergeSorted(arr,3,arr2,3);
-        for (int i : arr) {
-            System.out.print(i + " ");
-        }
     }
 }

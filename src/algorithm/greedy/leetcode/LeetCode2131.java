@@ -1,7 +1,6 @@
 package algorithm.greedy.leetcode;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 /**
  *  2131. Longest Palindrome by Concatenating Two Letter Words
@@ -28,14 +27,26 @@ import java.util.Map;
  *  */
 public class LeetCode2131 {
     public static int longestPalindrome(String[] words){
-        Map<String> map = new HashMap();
         int count = 0;
+        int palin = 0;
+        Arrays.sort(words);
+        Map<String,Integer> map = new HashMap<>();
 
-        map.put("ab",1);
+        for(String word : words){
+            String reverseWord = String.valueOf(word.charAt(1)) + String.valueOf(word.charAt(0));
+            if(map.getOrDefault(reverseWord,0) > 0){
+                count += 4;
+                map.put(reverseWord,map.get(reverseWord) -1);
+                if(word.equals(reverseWord)) palin--;
+            }
+            else{
+                if(word.equals(reverseWord)) palin++;
+                map.put(word, map.getOrDefault(word,0)+1);
+            }
+        }
+        if(palin >= 1) count += 2;
 
-
-
-        return 0;
+        return count;
     }
 
 }
