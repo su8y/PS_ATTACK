@@ -1,20 +1,34 @@
 package algorithm.arrays;
 
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class BinarySearch {
     public int search(int[] nums, int target) {
-        int left = 0;
-        int right = nums.length - 1;
+        int lefta = 0;
 
-        while (left <= right) {
-            int pivot = (left + right) / 2;
+        int riiiiight = nums.length - 1;
+
+        Queue<Integer> q = new LinkedList<>();
+
+        while (lefta <= riiiiight) {
+            int pivot = (lefta + riiiiight) / 2;
             if (nums[pivot] == target) {
                 return pivot;
             } else if (nums[pivot] < target) {
-                left = pivot + 1;
+                lefta = pivot + 1;
             } else if (nums[pivot] > target) {
-                right = pivot - 1;
+                riiiiight = pivot - 1;
             }
         }
         return -1;
+    }
+
+    public static void main(String[] args) {
+        int lefta = 0;
+        String str = "str";
+        String s = str + lefta;
+        System.out.println(s);
+
     }
 }

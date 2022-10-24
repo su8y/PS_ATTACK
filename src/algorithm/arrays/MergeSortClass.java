@@ -14,28 +14,26 @@ public class MergeSortClass {
         int wIdx = nums2.length - 1;
 
         if (num2Idx < 0) return;
-        while(0 <= num1Idx && 0 <= num2Idx){
+        while (0 <= num1Idx && 0 <= num2Idx) {
             int num1 = nums1[num1Idx];
             int num2 = nums2[num2Idx];
-            if(num1 <= num2){
+            if (num1 <= num2) {
                 int num = num2;
                 nums1[wIdx] = num;
                 num2Idx--;
                 wIdx--;
-            }else{
+            } else {
                 int num = num1;
                 nums1[wIdx] = num;
                 num1Idx--;
                 wIdx--;
+                nums1[wIdx] = nums1[num1Idx];
+                num1Idx--;
+                wIdx--;
             }
-        }
-        while(0 <= num1Idx){
-            nums1[wIdx] = nums1[num1Idx];
-            num1Idx--;
-            wIdx--;
-        }
 
 
+        }
     }
 }
 

@@ -1,15 +1,21 @@
 package algorithm;
 
 
-import algorithm.arrays.MergeSortClass;
-import algorithm.greedy.leetcode.LeetCode2131;
-
-import static algorithm.arrays.SortColorsClass.SortColor;
+import java.util.Scanner;
 
 public class Main {
+
     public static void main(String[] args) {
-        int a = LeetCode2131.longestPalindrome(new String[]{"ab","ll","ba"});
-        System.out.println(a);
+        Scanner scanner = new Scanner(System.in);
+
+        int t = scanner.nextInt();
+        for (int i = 0; i < t; i++) {
+            int nc = scanner.nextInt();
+
+            int ec = scanner.nextInt();
+            System.out.println(nc +" " +ec);
+            System.out.println(nc + ec);
+        }
 
     }
 }
