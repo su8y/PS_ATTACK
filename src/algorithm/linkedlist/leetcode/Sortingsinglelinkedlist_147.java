@@ -5,7 +5,7 @@ import java.util.PriorityQueue;
 
 import static java.lang.System.*;
 
-public class sortingsinglelinkedlist_147 {
+public class Sortingsinglelinkedlist_147 {
 
     public static void main(String[] args) {
         ListNode a1 = new ListNode(5,null);
