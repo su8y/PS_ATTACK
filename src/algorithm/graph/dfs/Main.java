@@ -3,84 +3,62 @@ package algorithm.graph.dfs;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.*;
+import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.stream.IntStream;
 
 public class Main {
-    private static int[] visited;
-    private static int n , e , startVertax;
-    private static List<List<Integer>> graph;
-
-    private static StringBuilder sb;
-
-    public static void putEdge(List<List<Integer>> graph, int x, int y){
-        graph.get(x).add(y);
-        graph.get(y).add(x);
-    }
+    private static int[][] visited;
+    private static int[][] graph;
+    static int[] dx = {1,0,-1,0};
+    static int[] dy = {0,1,0,-1};
     public static void main(String[] args) throws IOException {
-        graph = new ArrayList<>();
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        StringTokenizer st = new StringTokenizer(br.readLine());
-
-        n = Integer.parseInt(st.nextToken());
-        e = Integer.parseInt(st.nextToken());
-        startVertax = Integer.parseInt(st.nextToken());
-
-        visited = new int[n + 1];
-        for (int i = 0; i <= n; ++i) {
-            graph.add(new ArrayList<>());
+        int[] input = new int[2];
+        // y [0] x [1]
+        input = Arrays.stream(br.readLine().split(" ")).mapToInt(Integer::parseInt).toArray();
+        int n = input[0];
+        int m = input[1];
+        graph = new int[n][m];
+        visited = new int[n][m];
+        for(int i = 0 ; i < input[0]; i++){
+            graph[i] = Arrays.stream(br.readLine().split("", 6)).mapToInt(Integer::parseInt).toArray();
         }
-        for (int i = 0; i < e; ++i) {
-            st = new StringTokenizer(br.readLine());
-            int x= Integer.parseInt(st.nextToken());
-            int y = Integer.parseInt(st.nextToken());
-            putEdge(graph, x,y);
+        for(int i = 0 ; i< n; i++){
+            visited[i] = graph[i].clone();
         }
-        for(var i: graph){
-            Collections.sort(i);
-        }
+        bfs(0,0,n,m);
 
-        dfsAll(startVertax);
-        // initialization visited[] 0 to visited.length
-        Arrays.fill(visited,0,visited.length,0);
-        bfs(startVertax);
+
     }
 
-    private static void bfs(int startVertax) {
-        sb = new StringBuilder();
-        Queue<Integer> queue = new LinkedList<>();
-        queue.offer(startVertax);
-        visited[queue.peek()] = 1;
-
-        while (queue.isEmpty() == false) {
-            int here = queue.poll();
-            sb.append(here + " ");
-            for(int i = 0 ; i< graph.get(here).size(); i++){
-                int there = graph.get(here).get(i);
-                if (visited[there] == 0) {
-                    visited[there] = 1;
-                    queue.offer(there);
+    private static void bfs(int x, int y, int n, int m) {
+        Queue<Integer> q = new LinkedList<>();
+        q.offer(graph[y][x]);
+        visited[y][x] = 1;
+        int count = 0;
+        mywhile:
+        while(q.isEmpty() == false){
+            count++;
+            int here = q.poll();
+            for(int i = 0 ; i< 4; i++){
+                int t_x = x + dx[i];
+                int t_y = y + dy[i];
+                if(t_x >= 0 && t_x < graph.length
+                        && t_y >= 0 && t_y < graph.length
+                        && (visited[t_y][t_x] == 1)
+                ){
+                    if(t_y ==m-1 && t_x ==n-1) {
+                        count++;
+                        break mywhile;
+                    }
+                    visited[t_y][t_x] = count;
+                    q.offer(graph[t_y][t_x]);
                 }
             }
+
         }
-        System.out.println(sb.toString().trim());
-
-    }
-
-    private static void dfsAll(int startVertax) {
-        sb = new StringBuilder();
-        dfs(startVertax);
-        System.out.println(sb.toString().trim());
-    }
-
-    private static void dfs(int startVertax) {
-        visited[startVertax] = 1;
-        sb.append(startVertax+ " ");
-//        System.out.println("Visited! : " + startVertax);
-        for(int i = 0 ; i< graph.get(startVertax).size(); i++){
-            int there = graph.get(startVertax).get(i);
-            if (visited[there] == 0) {
-                dfs(there);
-            }
-        }
+        System.out.println(visited[n-1][m-1]);
     }
 }
