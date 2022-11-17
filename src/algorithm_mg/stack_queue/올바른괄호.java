@@ -1,4 +1,4 @@
-package PS_ATTACK.src.algorithm_mg;
+package algorithm_mg.stack_queue;
 
 import java.util.Stack;
 
@@ -17,7 +17,7 @@ public class 올바른괄호 {
         System.out.println(bracket);
 
         while(!bracket.empty()){
-            // add 가 0이상이면 실행
+
             if(bracket.pop().equals("(")){
                 add--;
             }
