@@ -4,21 +4,18 @@ import java.util.Stack;
 
 public class 올바른괄호 {
     public static void main(String[] args) {
-        Stack<String> bracket = new Stack<>();
-        String str = ")()(";
+        String str = "()()()";
         String[] arr = str.split("");
         boolean answer = true;
         int add = 0;
 
-        for(int i = 0; i < str.length(); i++){
-            bracket.push(arr[i]);
-        }
-        
-        System.out.println(bracket);
 
-        while(!bracket.empty()){
+
+//        while(!bracket.empty()){
+            for(int i = str.length()-1; i >=0 ; i--){
+
             // add 가 0이상이면 실행
-            if(bracket.pop().equals("(")){
+            if(str.charAt(i) == '('){
                 add--;
             }
             else {
