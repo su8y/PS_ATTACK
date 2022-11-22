@@ -48,14 +48,17 @@ public class DFSBFS1260 {
     private static void bfs(int startVertax) {
         sb = new StringBuilder();
         Queue<Integer> queue = new LinkedList<>();
+        // 1. queue 에 시작점 집어넣기 .
         queue.offer(startVertax);
         visited[queue.peek()] = 1;
 
         while (queue.isEmpty() == false) {
             int here = queue.poll();
             sb.append(here + " ");
+            // 2. 인근 정점 큐에 넣기
             for(int i = 0 ; i< graph.get(here).size(); i++){
                 int there = graph.get(here).get(i);
+                // 3. 방문처리된 정점인지 확인후 방문
                 if (visited[there] == 0) {
                     visited[there] = 1;
                     queue.offer(there);

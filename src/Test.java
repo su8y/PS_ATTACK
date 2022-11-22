@@ -1,65 +1,81 @@
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
 
-public class Test {
-    class Student {
-        int no;
-        int po;
+class Test {
+    static int Y_LEN;
+    static int X_LEN;
+    final static int[] d_x = {-1,0,1,0};
+    final static int[] d_y = {0,1,0,-1};
+    static boolean[][] visitedY;
+    static boolean[][] visitedX;
 
-        public int getNo() {
-            return no;
+
+    public List<List<Integer>> pacificAtlantic(int[][] heights) {
+        Y_LEN = heights.length;
+        X_LEN = heights[0].length;
+        List<List<Integer>> list = new ArrayList<>();
+        for(int y = 0 ; y < Y_LEN; y++){
+            for(int x = 0 ; x< X_LEN; x++){
+                if(dfsAll(x,y,heights) == true){
+                    List<Integer> correct = new ArrayList<>();
+                    correct.addAll(Arrays.asList(y,x));
+                    list.add(correct);
+                }
+            }
         }
-
-        public void setNo(int no) {
-            this.no = no;
-        }
-
-        public int getPo() {
-            return po;
-        }
-
-        public void setPo(int po) {
-            this.po = po;
-        }
-
+        return list;
     }
+
+
+    private boolean dfsAll(int x, int y,int arr[][]) {
+        visitedX = new boolean[Y_LEN][X_LEN];
+        visitedY = new boolean[Y_LEN][X_LEN];
+        return dfsx(x,y,arr) && dfsy(x,y,arr);
+    }
+
+    private boolean dfsy(int x, int y,int arr[][]) {
+        boolean isArrive = false;
+        visitedY[y][x] = true;
+        if(x >= X_LEN -1 || y >= Y_LEN -1) return true;
+        for(int i = 0 ; i< 4; i++){
+            if(isArrive) return true;
+            int therex = x + d_x[i];
+            int therey = y + d_y[i];
+            if((therex <X_LEN && therex >= 0) && (therey < Y_LEN && therey >= 0))
+            {
+                if(visitedY[therey][therex] == false&& arr[y][x] >= arr[therey][therex]){
+                    isArrive = dfsy(therex, therey,arr);
+                }
+            }
+        }
+        return isArrive;
+    }
+
+    private boolean dfsx(int x, int y,int arr[][]) {
+        boolean isArrive = false;
+        visitedX[y][x] = true;
+        if(x == 0 || y == 0) return true;
+
+        for(int i = 0 ; i< 4; i++){
+            if(isArrive) return true;
+            int therex = x + d_x[i];
+            int therey = y + d_y[i];
+            if((therex <X_LEN && therex >= 0) && (therey < Y_LEN && therey >= 0))
+            {
+                if(visitedX[therey][therex] == false && arr[y][x] >= arr[therey][therex])
+                {
+                    isArrive = dfsx(therex, therey,arr);
+
+                }
+            }
+        }
+        return isArrive;
+    }
+
     public static void main(String[] args) {
-        int n = 6;
-        int[] student = {6, 1, 4, 2, 5, 1, 3, 3, 1, 6, 5};
-        int[] point = {3, 2, 5, 3, 4, 2, 4, 2, 3, 2, 2};
-
-        System.out.println(solution(n, student, point));
-
+        int[][] arr= {{1,1,3},{1,3,1},{3,1,1}};
+        new Test().pacificAtlantic(arr);
     }
 
-    private static int solution(int n, int[] student, int[] point) {
-        int count = 0;
-        for(int i = 0 ; i<n; i++){
-
-        }
-        for(int i = 0, len = student.length; i < len; ++i){
-
-        }
-
-        return count;
-    }
 }
-//
-//    public static String solution(String line){
-//        StringBuilder builder = new StringBuilder();
-//        int i =0;
-//        int j = 0;
-//        int len = line.length();
-//        while(i < len){
-//            j = i + 1;
-//            char target = line.charAt(i);
-//
-//            while(j < len && target == line.charAt(j)){
-//                j++;
-//            }
-//
-//            builder.append(line.charAt(i));
-//            if(i != j - 1) builder.append('*');
-//            i = j;
-//        }
-//        return builder.toString();
-//    }

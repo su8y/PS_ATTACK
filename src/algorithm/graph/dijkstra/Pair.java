@@ -19,6 +19,6 @@ class Pair<T,U> implements Comparable<Pair<T,U>> {
 
     @Override
     public int compareTo(Pair<T, U> o) {
-        return (int) this.second - (int)o.second;
+        return (int) this.first - (int)o.first;
     }
 }
