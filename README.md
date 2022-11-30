@@ -1,6 +1,8 @@
 # commit 컨벤션 규칙
-커밋은 무조건
+<div align=left>
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=suby00)](https://solved.ac/suby00/)
+</div>
+
 ```aidl
 git commit -m "[문제사이트/문제유형]문제이름"
 ```
-이런식으로 진행해주세요
