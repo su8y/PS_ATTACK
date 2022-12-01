@@ -1,4 +1,4 @@
-package algorithm_mg.stack_queue;
+package parkmingu.stack_queue;
 
 import java.util.Stack;
 
