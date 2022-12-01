@@ -25,5 +25,5 @@ git commit -m "[문제사이트/문제유형]문제이름"
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=suby00)](https://solved.ac/suby00/)
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=gksktl111)](https://solved.ac/gksktl111/)
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=cji456)](https://solved.ac/cji456/)
-[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=unknown)](https://solved.ac/unknown/)
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=tecte1023)](https://solved.ac/tecte1023/)
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=unknown)](https://solved.ac/unknown/)
