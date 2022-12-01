@@ -1,4 +1,4 @@
-package algorithm_mg.dfs_bfs;
+package parkmingu.dfs_bfs;
 
 public class 타겟넘버 {
     // 멤버변수화 시켜서 간단하게 사용하기

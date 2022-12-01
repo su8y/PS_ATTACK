@@ -1,4 +1,4 @@
-package algorithm_mg.dfs_bfs;
+package parkmingu.dfs_bfs;
 
 import java.util.LinkedList;
 import java.util.Queue;
