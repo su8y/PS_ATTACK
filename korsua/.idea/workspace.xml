@@ -5,14 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95ad5fc1-590b-410d-808c-2820fd247010" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/graph/dfs/네트워크.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/korsua.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Lower_bound.class" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/graph/bfs/게임맵최단거리.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dfs/DFSBFS1260.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dijkstra/Dijkstra.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dijkstra/Pair.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph/BFS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph/DFS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph/dijkstra/BOJ1238.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph/dijkstra/BOJ1916.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/graph/dijkstra/BOJ4485.class" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +54,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
+    "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15429688",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.keymap"
@@ -62,13 +65,26 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BFS">
+  <component name="RunManager" selected="Application.게임맵최단거리">
     <configuration name="네트워크" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="korsua.graph.dfs.네트워크" />
       <module name="korsua" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="korsua.graph.dfs.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="게임맵최단거리" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="korsua.graph.bfs.게임맵최단거리" />
+      <module name="korsua" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="korsua.graph.bfs.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -90,6 +106,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.게임맵최단거리" />
         <item itemvalue="Application.BFS" />
         <item itemvalue="Application.네트워크" />
       </list>
@@ -105,7 +122,7 @@
       <updated>1669969519036</updated>
       <workItem from="1669969521248" duration="1173000" />
       <workItem from="1669970702689" duration="193000" />
-      <workItem from="1669970912287" duration="1214000" />
+      <workItem from="1669970912287" duration="4620000" />
     </task>
     <servers />
   </component>
