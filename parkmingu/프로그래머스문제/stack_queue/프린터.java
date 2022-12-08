@@ -1,4 +1,4 @@
-package parkmingu.stack_queue;
+package parkmingu.프로그래머스문제.stack_queue;
 
 import java.util.LinkedList;
 import java.util.Queue;

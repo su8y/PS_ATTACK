@@ -1,4 +1,4 @@
-package parkmingu.dfs_bfs;
+package parkmingu.프로그래머스문제.dfs_bfs;
 
 import java.util.LinkedList;
 import java.util.Queue;
