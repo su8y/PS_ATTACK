@@ -1,4 +1,4 @@
-package parkmingu.bruteForce;
+package parkmingu.프로그래머스문제.bruteForce;
 
 import java.util.ArrayList;
 import java.util.Arrays;

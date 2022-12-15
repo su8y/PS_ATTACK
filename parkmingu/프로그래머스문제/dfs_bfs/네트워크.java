@@ -1,4 +1,4 @@
-package parkmingu.dfs_bfs;
+package parkmingu.프로그래머스문제.dfs_bfs;
 
 public class 네트워크 {
 
