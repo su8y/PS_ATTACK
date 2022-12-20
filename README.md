@@ -6,7 +6,7 @@
 </div>
 
 # 느리지만 꾸준히 
-⏱️ 매주 **수요일 9시** 리뷰  
+⏱️ 매주 **목요일 9시** 리뷰  
 * 🙇‍♂️ 리포지토리 `fork`후 폴더를 추가해주시면 됩니다. 폴더명은 `ex) nickname`으로 만들어주세요
 * 🚫 다른 팀원들의 폴더를 멋대로 `수정`하시면 안됩니다.
 
@@ -14,7 +14,9 @@
 |----|하|중|
 |----|----|----|
 |1주차|[과제 안내신 분..?](https://www.acmicpc.net/problem/5597),[나는 요리사다](https://www.acmicpc.net/problem/2953)|----|
-|2주차|----|----|
+|2주차|[문자열반복](https://www.acmicpc.net/problem/2675),[단어공부](https://www.acmicpc.net/problem/1157)|----|
+|3주차(기초자료구조 개념 공부하기)||----|
+|4주차(완전 탐색 알고리즘)|----|----|
 
 ## 커밋 컨벤션 
 ```bash
@@ -26,6 +28,8 @@ git commit -m "[문제사이트/문제유형]문제이름"
 * **CONTENT** : "`접근 방법`, `공부한 내용`" 정리
 
 ## 알아두면 좋은정보 (TMI)
+* 시간/공간 복잡도 계산 방법 
+* 기초 자료구조
 
 ## 언젠간 `골드`가 되겠지
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=suby00)](https://solved.ac/suby00/)
