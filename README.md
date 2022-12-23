@@ -16,7 +16,7 @@
 |1주차|[과제 안내신 분..?](https://www.acmicpc.net/problem/5597),[나는 요리사다](https://www.acmicpc.net/problem/2953)|----|
 |2주차|[문자열반복](https://www.acmicpc.net/problem/2675),[단어공부](https://www.acmicpc.net/problem/1157)|----|
 |3주차(기초자료구조 개념 공부하기)||----|
-|4주차(완전 탐색 알고리즘)|----|----|
+|4주차(완전 탐색 알고리즘)|[일곱난쟁이](https://www.acmicpc.net/problem/2309),[게임 맵 최단 거리 ](https://school.programmers.co.kr/learn/courses/30/lessons/1844)|[MakingALargeIsland](https://leetcode.com/problems/making-a-large-island/)|
 
 ## 커밋 컨벤션 
 ```bash
@@ -37,3 +37,4 @@ git commit -m "[문제사이트/문제유형]문제이름"
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=cji456)](https://solved.ac/cji456/)
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=tecte1023)](https://solved.ac/tecte1023/)
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=tony2yoo)](https://solved.ac/tony2yoo/)
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=ionmax5602)](https://solved.ac/ionmax5602/)
