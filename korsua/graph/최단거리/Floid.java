@@ -1,4 +1,4 @@
-package korsua.graph.플로이드와샬;
+package korsua.graph.최단거리;
 
 public class Floid {
     public static void main(String[] args) {

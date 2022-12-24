@@ -1,6 +1,5 @@
-package korsua.graph.dijkstra;
+package korsua.graph.최단거리;
 
-import java.util.AbstractMap;
 import java.util.Arrays;
 import java.util.PriorityQueue;
 

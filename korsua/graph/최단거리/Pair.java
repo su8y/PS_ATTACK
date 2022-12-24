@@ -1,4 +1,4 @@
-package korsua.graph.dijkstra;
+package korsua.graph.최단거리;
 
 class Pair<T,U> implements Comparable<Pair<T,U>> {
     private T first;
