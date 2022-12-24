@@ -18,45 +18,35 @@ public class Dijkstra {
     public static int V = 4;
     public static List<List<Pair>> adj = new ArrayList<>();
 
-    public List<Integer> dijkstra(int src) {
-        List<Integer> dist = Arrays.asList(new Integer[V]);
-        for (int i = 0; i < dist.size(); i++) dist.set(i, Integer.MAX_VALUE);
+    public List<Integer> dijkstra(int src){
+        List<Integer> distance =Arrays.asList(new Integer[V]);
+        for (int i = 0; i < V; i++) distance.set(i, Integer.MAX_VALUE);
 
-        //자기자신은 0만큼 소요됨.
-        dist.set(src, 0);
+        PriorityQueue<Pair> pq = new PriorityQueue();
+        //자기자신을 초기화함.
+        distance.set(src,0);
+        pq.offer(new Pair(src,0));
 
-        PriorityQueue<Pair<Integer,Integer>> pq = new PriorityQueue<>();
-        pq.offer(new Pair(src, 0));
+        while(pq.isEmpty() == false){
+            Pair here = pq.poll();
+            int hereVertax = (int) here.getFirst();
+            int hereCost = (int) here.getSecond();
 
-        // 5 번
-        while (pq.isEmpty() == false) {
-            int here = pq.peek().getFirst();
-            int cost = pq.peek().getSecond();
-            pq.poll();
+            if(distance.get(hereVertax) < hereCost) continue;
 
-            // 현재 큐에서 꺼낸 cost가 원래보다 크다면 무시한다.
-            // 3번 위배
-            if (dist.get(here) < cost) continue;
+            for(int i =0; i < adj.get(hereVertax).size(); i++){
+                Pair there = adj.get(hereVertax).get(i);
+                int thereVertax = (int) there.getFirst();
+                int thereCost = (int) there.getSecond() + hereCost;
 
-
-            for (int i = 0; i < adj.get(here).size(); i++) {
-                // adj.get(here)의 연결된 정점
-                int there = (int) adj.get(here).get(i).getFirst();
-                // 연결된정점의 간선의 길이
-                int nexDist = cost + (int) adj.get(here).get(i).getSecond();
-
-                //현재 가지고있는 cost보다 next Dist가 더 작다면 pq에 넣어준다.
-                if (dist.get(there) > nexDist) {
-                    dist.set(there, nexDist);
-                    pq.offer(new Pair(there, nexDist));
+                if(distance.get(thereVertax) > thereCost){
+                    pq.offer(new Pair(thereVertax, thereCost));
+                    distance.set(thereVertax, thereCost);
                 }
             }
-
         }
-
-        return dist;
+        return distance;
     }
-
     public static void main(String[] args) {
         for (int i = 0; i < V; i++) {
             adj.add(i, new ArrayList<>());
