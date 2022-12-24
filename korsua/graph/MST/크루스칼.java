@@ -1,6 +1,4 @@
-package korsua.graph.kruskal;
-
-import korsua.tree.leetcode.상호배타적집합;
+package korsua.graph.MST;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -57,8 +55,8 @@ public class 크루스칼 {
         List<Pair<Integer,Pair<Integer,Integer>>> edges = new ArrayList<>();
 
         // edges 초기화 index는 1부터 시작
-        for (int i = 0; i <= n; i++) edges = new ArrayList<>();
 
+        for (int i = 0; i <= n; i++) edges = new ArrayList<>();
         for (int i = 0; i < e_n; i++) {
             st = new StringTokenizer(br.readLine());
             int a = Integer.parseInt(st.nextToken());
