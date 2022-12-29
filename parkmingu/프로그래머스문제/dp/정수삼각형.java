@@ -2,6 +2,7 @@ package parkmingu.프로그래머스문제.dp;
 
 public class 정수삼각형 {
     public int solution(int[][] triangle) {
+        // 아직 못품
         /*
         [
             [7], 
