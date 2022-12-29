@@ -1,4 +1,4 @@
-package parkmingu.백준문제;
+package parkmingu.백준문제.bruteForce;
 
 import java.util.Arrays;
 import java.util.Scanner;
@@ -52,11 +52,12 @@ public class 일곱난쟁이 {
         int[] answer_2 = new int[7];
         int add = 0;
 
+        // visited로 출력할 거 판별
         for (int i = 0; i < n; i++) {
             if (visited[i]) {
-                // System.out.print(arr[i] + " ");
-                tmp += arr[i];
-                answer_2[add++] = arr[i];
+                System.out.print(arr[i] + " ");
+                // tmp += arr[i];
+                // answer_2[add++] = arr[i];
             }
         }
         System.out.println();
