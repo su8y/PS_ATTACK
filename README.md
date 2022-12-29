@@ -38,3 +38,4 @@ git commit -m "[문제사이트/문제유형]문제이름"
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=tecte1023)](https://solved.ac/tecte1023/)
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=tony2yoo)](https://solved.ac/tony2yoo/)
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=ionmax5602)](https://solved.ac/ionmax5602/)
+[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=sibjagun)](https://solved.ac/sibjagun/)
