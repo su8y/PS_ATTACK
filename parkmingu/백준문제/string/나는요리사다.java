@@ -1,4 +1,4 @@
-package parkmingu.백준문제;
+package parkmingu.백준문제.string;
 
 import java.util.Scanner;
 
@@ -10,19 +10,19 @@ public class 나는요리사다 {
 
         Scanner sc = new Scanner(System.in);
 
-        for(int i = 0; i < cookScore.length; i++){
+        for (int i = 0; i < cookScore.length; i++) {
             // newMax는 사용후 초기화
             newMax = 0;
-            for(int j = 0; j < cookScore[i].length; j++){
+            for (int j = 0; j < cookScore[i].length; j++) {
                 cookScore[i][j] = sc.nextInt();
                 newMax += cookScore[i][j];
             }
-            if(newMax > max){
+            if (newMax > max) {
                 bestCook = i + 1;
                 max = newMax;
             }
         }
 
-        System.out.print(bestCook + " "+ max);
+        System.out.print(bestCook + " " + max);
     }
 }

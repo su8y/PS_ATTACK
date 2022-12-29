@@ -1,4 +1,4 @@
-package parkmingu.백준문제;
+package parkmingu.백준문제.string;
 
 import java.util.Scanner;
 
@@ -10,13 +10,13 @@ public class 문자열반복 {
         int t = sc.nextInt();
 
         // n^3나옴 안좋음
-        for(int i = 0; i < t; i++){
+        for (int i = 0; i < t; i++) {
             int r = sc.nextInt();
             String[] s = sc.next().split("");
             // A B C
 
-            for(int j = 0; j < s.length; j++){
-                for(int k = 0; k < r; k++){
+            for (int j = 0; j < s.length; j++) {
+                for (int k = 0; k < r; k++) {
                     System.out.print(s[j]);
                 }
             }
