@@ -7,7 +7,7 @@ public class MakingALargeIsland {
 
         Scanner sc = new Scanner(System.in);
 
-        int[][] input = new int[2][2];
+        int[][] input = new int[500][500];
 
         for (int i = 0; i < input.length; i++) {
             for (int j = 0; j < input[i].length; j++) {
@@ -18,6 +18,10 @@ public class MakingALargeIsland {
         largestIsland(input);
     }
 
+    // 각각의 네트워크의 크기를 구한다
+    // 상하좌우로 정확히 한칸 떨어져있는 네트워크중에서 제일큰 네트워크를 구한다
+    // 두 네트워크를 합쳐서 값을 구한다
+
     public static int largestIsland(int[][] grid) {
         int tmp = 0;
         int answer;
@@ -25,21 +29,14 @@ public class MakingALargeIsland {
         for (int i = 0; i < grid.length; i++) {
             for (int j = 0; j < grid[i].length; j++) {
                 if (grid[i][j] == 1) {
-                    tmp++;
+                    grid[i][j]++;
+                    System.out.print(grid[i][j] + " ");
+                } else {
+                    System.out.print(grid[i][j] + " ");
                 }
             }
         }
 
-        if (tmp == 0) {
-            answer = 1;
-        } else if (tmp == 1) {
-            answer = 2;
-        } else if (tmp == 2) {
-            answer = 3;
-        } else {
-            answer = 4;
-        }
-
-        return answer;
+        return 0;
     }
 }
