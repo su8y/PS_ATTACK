@@ -1,0 +1,30 @@
+import java.util.Arrays;
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		int[] nan = new int[9];
+		Scanner sc = new Scanner(System.in);
+		int hap = 0, spy1 = 0, spy2 = 0;
+		
+		for (int i=0; i<9; i++) {
+			nan[i] = sc.nextInt();
+			hap += nan[i];
+		}
+		
+		for (int i=0; i<8; i++) 
+			for (int j=i+1; j<9; j++) 
+				if(hap - nan[i] - nan[j] == 100) {
+					spy1 = nan[i];
+					spy2 = nan[j];
+					break;
+				}
+		Arrays.sort(nan);
+		
+		for(int k=0; k<9; k++) {
+			if (nan[k] == spy1 || nan[k] == spy2) continue;
+			System.out.println(nan[k]);
+		}
+	}
+}
