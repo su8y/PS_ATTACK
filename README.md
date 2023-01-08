@@ -17,10 +17,12 @@
 |2주차|[문자열반복](https://www.acmicpc.net/problem/2675),[단어공부](https://www.acmicpc.net/problem/1157)|----|
 |3주차(기초자료구조 개념 공부하기)||----|
 |4주차(완전 탐색 알고리즘)|[일곱난쟁이](https://www.acmicpc.net/problem/2309),[게임 맵 최단 거리 ](https://school.programmers.co.kr/learn/courses/30/lessons/1844)|[MakingALargeIsland](https://leetcode.com/problems/making-a-large-island/)|
+|5주차(동적프로그래밍)|----|----|
 
 ## 커밋 컨벤션 
+
 ```bash
-git commit -m "[문제사이트/문제유형]문제이름"
+git commit -m "[문제사이트/문제유형]문제이름(문제번호)"
 ```
 
 ## Pull requests 컨벤션
@@ -39,4 +41,3 @@ git commit -m "[문제사이트/문제유형]문제이름"
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=sibjagun)](https://solved.ac/sibjagun/)
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=tony2yoo)](https://solved.ac/tony2yoo/)
 [![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=cji456)](https://solved.ac/cji456/)
-
