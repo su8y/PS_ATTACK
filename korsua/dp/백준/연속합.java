@@ -1,11 +1,10 @@
-
-package korsua.dp.백준;
+package dp.백준;
 
 import java.io.*;
 import java.util.Arrays;
 import java.util.StringTokenizer;
 
-public class 연속합1912 {
+public class 연속합 {
     static int N,M;
     static int[] arr;
 
