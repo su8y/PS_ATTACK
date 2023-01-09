@@ -55,12 +55,13 @@ public class 일곱난쟁이 {
         // visited로 출력할 거 판별
         for (int i = 0; i < n; i++) {
             if (visited[i]) {
-                System.out.print(arr[i] + " ");
-                // tmp += arr[i];
-                // answer_2[add++] = arr[i];
+                // System.out.print(arr[i] + " ");
+                tmp += arr[i];
+                answer_2[add++] = arr[i];
             }
         }
-        System.out.println();
+
+        // System.out.println();
 
         Arrays.sort(answer_2);
 
