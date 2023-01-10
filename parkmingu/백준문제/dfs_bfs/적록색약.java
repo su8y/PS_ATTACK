@@ -7,6 +7,7 @@ import java.util.Scanner;
 import java.util.StringTokenizer;
 
 public class 적록색약 {
+    // 해결 X
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
 
