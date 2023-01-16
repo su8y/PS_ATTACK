@@ -13,6 +13,7 @@ public class 최소최대 {
 		for (int i = 0; i < num.length; i++) {
 			num[i] = sc.nextInt();
 		}
+		
 		max = num[0];
 		min = num[0];
 
