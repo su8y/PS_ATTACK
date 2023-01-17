@@ -1,5 +1,3 @@
-package Practice;
-
 import java.util.Scanner;
 
 public class Oven_Clock1 {
