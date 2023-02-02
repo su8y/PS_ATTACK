@@ -33,7 +33,10 @@ public class 신입사원 {
             for (int j = 0; j < n; j++) {
                 StringTokenizer st = new StringTokenizer(br.readLine(), " ");
                 // 10의자리
-                score[Integer.parseInt(st.nextToken())] = Integer.parseInt(st.nextToken());
+                // 좀더 의미있는 변수명 사용해보기
+                int doc_score = Integer.parseInt(st.nextToken());
+                int view_score = Integer.parseInt(st.nextToken());
+                score[doc_score] = view_score;
             }
 
             int num = score[1];
