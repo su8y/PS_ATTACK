@@ -1,0 +1,47 @@
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class LV8_2606 {
+
+    static HashMap<Integer, ArrayList<Integer>> edge = new HashMap<>();
+    static HashMap<Integer, Boolean> visit = new HashMap<>();
+    static ArrayList<Integer> res = new ArrayList<>();
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int C = sc.nextInt(), N = sc.nextInt();
+
+        for(int i=1; i<=C; i++) {
+            edge.put(i, new ArrayList<>());
+            visit.put(i, false);
+        }
+
+        for(int i=0; i<N; i++) {
+            int A = sc.nextInt(), B = sc.nextInt();
+            edge.get(A).add(B);
+            edge.get(B).add(A);
+        }
+
+//        edgePrint(C, edge);
+
+        dfs(1);
+        System.out.println(res.size()-1);
+    }
+
+    public static void dfs(int C) {
+        visit.put(C, true);     // dfs 메소드 실행시 방문 정보 저장
+        res.add(C);
+        if(!edge.get(C).isEmpty()) {
+            for(int i : edge.get(C)) {
+                if(!visit.get(i)) dfs(i);
+            }
+        }
+    }
+
+    public static void edgePrint (int C, HashMap<Integer, ArrayList<Integer>> edge) {
+        for(int i=1; i<=C; i++)
+            System.out.println(i + " : " + edge.get(i));
+    }
+
+}
