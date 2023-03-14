@@ -6,7 +6,7 @@
 </div>
 
 # 느리지만 꾸준히 
-⏱️ 매주 **목요일 9시** 리뷰  
+⏱️ 매주 **목요일 8시** 리뷰  
 * 🙇‍♂️ 리포지토리 `fork`후 폴더를 추가해주시면 됩니다. 폴더명은 `ex) nickname`으로 만들어주세요
 * 🚫 다른 팀원들의 폴더를 멋대로 `수정`하시면 안됩니다.
 
@@ -17,12 +17,14 @@
 |2주차|[문자열반복](https://www.acmicpc.net/problem/2675),[단어공부](https://www.acmicpc.net/problem/1157)|----|
 |3주차(기초자료구조 개념 공부하기)||----|
 |4주차(완전 탐색 알고리즘)|[일곱난쟁이](https://www.acmicpc.net/problem/2309),[게임 맵 최단 거리 ](https://school.programmers.co.kr/learn/courses/30/lessons/1844)|[MakingALargeIsland](https://leetcode.com/problems/making-a-large-island/)|
-|5주차(동적프로그래밍)|----|----|
-
+|5주차(동적프로그래밍)|[가장긴증가하는부분수열](https://www.acmicpc.net/problem/11053)|[평범한 배낭](https://www.acmicpc.net/problem/12865)|
+|6주차(그리디)|---|---|
+|7주차(약점 보완)|---|---|
+|8주차(카카오문제풀이)|[접두사](https://www.acmicpc.net/problem/1141)|---|
 ## 커밋 컨벤션 
 
 ```bash
-git commit -m "[문제사이트/문제유형]문제이름(문제번호)"
+git commit -m "[문제사이트/접근 유형]문제이름 (문제번호)"
 ```
 
 ## Pull requests 컨벤션
