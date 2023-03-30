@@ -30,7 +30,6 @@ public class RGB거리 {
         if(x == 1) return dp[j][x] =(Math.min(solve(j+1,0),solve(j+1,2)))+arr[j][x];
         if(x == 2) return dp[j][x] =(Math.min(solve(j+1,0),solve(j+1,1)))+arr[j][x];
         return 0;
-
     }
 
 }
