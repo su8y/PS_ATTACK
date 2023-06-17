@@ -1,0 +1,84 @@
+import java.util.*;
+
+public class LV9_1260 {
+    static HashMap<Integer, ArrayList<Integer>> edge = new HashMap<>();
+    static HashMap<Integer, Boolean> visit = new HashMap<>();
+    static HashMap<Integer, Boolean> check = new HashMap<>();
+    static Queue<Integer> qu = new LinkedList<>();
+    static ArrayList<Integer> quRes = new ArrayList<>();
+    static ArrayList<Integer> stRes = new ArrayList<>();
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        int N = sc.nextInt(), M = sc.nextInt(), V = sc.nextInt();
+
+        for(int i = 1; i<=N; i++)
+            edge.put(i, new ArrayList<>());
+
+
+        for (int i = 0; i < M; i++) {
+            int a = sc.nextInt();
+            int b = sc.nextInt();
+//            if (!edge.containsKey(a)) edge.put(a, new ArrayList<>());
+//            if (!edge.containsKey(b)) edge.put(b, new ArrayList<>());
+            edge.get(a).add(b);
+            edge.get(b).add(a);
+        }
+
+        for (int i : edge.keySet()) {
+            Collections.sort(edge.get(i));
+            visit.put(i, false);
+            check.put(i, false);
+        }
+
+        dfs(V);
+
+        for (int i : edge.keySet()) visit.put(i, false);    // dfs 끝나고 bfs를 위해 visit 데이터 초기화.
+
+        bfs(V);
+
+        for (int i : stRes)
+            System.out.printf("%d ", i);
+
+        System.out.println();
+
+        for (int i : quRes)
+            System.out.printf("%d ", i);
+
+    }
+
+    public static void dfs(int vertex) {
+        visit.put(vertex, true);
+        stRes.add(vertex);
+
+            for (int i = 0; i < edge.get(vertex).size(); i++)
+                for (int j : edge.get(vertex))
+                    if (!visit.get(j)) dfs(j);
+
+    }
+
+    public static void bfs(int vertex) {
+
+        if (!check.get(vertex) && !visit.get(vertex)) {
+            visit.put(vertex, true);
+            check.put(vertex, true);
+            qu.offer(vertex);
+        }
+
+        for (int i : edge.get(vertex))
+            if (!check.get(i)) {
+                qu.offer(i);
+                check.put(i, true);
+            }
+
+        quRes.add(qu.poll());
+
+        if (!qu.isEmpty()) if (!visit.get(qu.peek())) {
+            bfs(qu.peek());
+        }
+    }
+}
+
+
+
