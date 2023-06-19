@@ -1,7 +1,14 @@
 /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S /Users/baesua/workspaces/PS_ATTACK/korsua -B /Users/baesua/workspaces/PS_ATTACK/korsua/cmake-build-debug
-CMake Error at CMakeLists.txt:2:
-  Parse error.  Expected a command name, got unquoted argument with text
-  "<<<<<<<".
-
-
+CMake Error: Parse error in cache file /Users/baesua/workspaces/PS_ATTACK/korsua/cmake-build-debug/CMakeCache.txt on line 17. Offending entry: <<<<<<< HEAD
+CMake Error: Parse error in cache file /Users/baesua/workspaces/PS_ATTACK/korsua/cmake-build-debug/CMakeCache.txt on line 90. Offending entry: >>>>>>> 0b57bc2 (:lock: Gitignore)
+CMake Error: Parse error in cache file /Users/baesua/workspaces/PS_ATTACK/korsua/cmake-build-debug/CMakeCache.txt on line 95. Offending entry: <<<<<<< HEAD
+CMake Error: Parse error in cache file /Users/baesua/workspaces/PS_ATTACK/korsua/cmake-build-debug/CMakeCache.txt on line 232. Offending entry: >>>>>>> 0b57bc2 (:lock: Gitignore)
+CMake Error: Parse error in cache file /Users/baesua/workspaces/PS_ATTACK/korsua/cmake-build-debug/CMakeCache.txt on line 238. Offending entry: <<<<<<< HEAD
+CMake Error: Parse error in cache file /Users/baesua/workspaces/PS_ATTACK/korsua/cmake-build-debug/CMakeCache.txt on line 244. Offending entry: >>>>>>> 0b57bc2 (:lock: Gitignore)
+CMake Error: Parse error in cache file /Users/baesua/workspaces/PS_ATTACK/korsua/cmake-build-debug/CMakeCache.txt on line 259. Offending entry: <<<<<<< HEAD
+CMake Error: Parse error in cache file /Users/baesua/workspaces/PS_ATTACK/korsua/cmake-build-debug/CMakeCache.txt on line 301. Offending entry: >>>>>>> 0b57bc2 (:lock: Gitignore)
+CMake Error: Parse error in cache file /Users/baesua/workspaces/PS_ATTACK/korsua/cmake-build-debug/CMakeCache.txt on line 315. Offending entry: <<<<<<< HEAD
+CMake Error: Parse error in cache file /Users/baesua/workspaces/PS_ATTACK/korsua/cmake-build-debug/CMakeCache.txt on line 381. Offending entry: >>>>>>> 0b57bc2 (:lock: Gitignore)
 -- Configuring incomplete, errors occurred!
+See also "/Users/baesua/workspaces/PS_ATTACK/korsua/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+See also "/Users/baesua/workspaces/PS_ATTACK/korsua/cmake-build-debug/CMakeFiles/CMakeError.log".
