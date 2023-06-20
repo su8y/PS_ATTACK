@@ -15,8 +15,7 @@
 					"source" : ".",
 					"targetIndexes" : 
 					[
-						0,
-						1
+						0
 					]
 				}
 			],
@@ -31,8 +30,7 @@
 					"name" : "korsua",
 					"targetIndexes" : 
 					[
-						0,
-						1
+						0
 					]
 				}
 			],
@@ -40,15 +38,8 @@
 			[
 				{
 					"directoryIndex" : 0,
-					"id" : "korsua::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-korsua-Debug-f46407f8c5e6a492236a.json",
-					"name" : "korsua",
-					"projectIndex" : 0
-				},
-				{
-					"directoryIndex" : 0,
 					"id" : "out::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-out-Debug-6c866fbb650d6a2f097f.json",
+					"jsonFile" : "target-out-Debug-fe68b5035c2f4368e885.json",
 					"name" : "out",
 					"projectIndex" : 0
 				}
