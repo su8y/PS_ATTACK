@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Start testing: Jun 25 14:52 KST
 ----------------------------------------------------------
 End testing: Jun 25 14:52 KST
@@ -13,3 +14,8 @@ Start testing: Jun 22 19:14 KST
 ----------------------------------------------------------
 End testing: Jun 22 19:14 KST
 >>>>>>> e6065ed (:sparkles: [BOJ/TREE] 11725. 트리의 부모 찾기)
+=======
+Start testing: Jun 22 22:40 KST
+----------------------------------------------------------
+End testing: Jun 22 22:40 KST
+>>>>>>> 5638617 (:sparkles: [BOJ/PREFIXSUM] 구간 합 구하기 5)
