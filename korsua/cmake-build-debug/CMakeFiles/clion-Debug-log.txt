@@ -1,5 +1,6 @@
 /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/Applications/CLion.app/Contents/bin/ninja/mac/ninja -G Ninja -S /Users/baesua/workspaces/PS_ATTACK/korsua -B /Users/baesua/workspaces/PS_ATTACK/korsua/cmake-build-debug
 <<<<<<< HEAD
+<<<<<<< HEAD
 CMake Error: Parse error in cache file /Users/baesua/workspaces/PS_ATTACK/korsua/cmake-build-debug/CMakeCache.txt on line 17. Offending entry: <<<<<<< HEAD
 CMake Error: Parse error in cache file /Users/baesua/workspaces/PS_ATTACK/korsua/cmake-build-debug/CMakeCache.txt on line 90. Offending entry: >>>>>>> 0b57bc2 (:lock: Gitignore)
 CMake Error: Parse error in cache file /Users/baesua/workspaces/PS_ATTACK/korsua/cmake-build-debug/CMakeCache.txt on line 95. Offending entry: <<<<<<< HEAD
@@ -26,6 +27,8 @@ See also "/Users/baesua/workspaces/PS_ATTACK/korsua/cmake-build-debug/CMakeFiles
 -- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++ - skipped
 -- Detecting CXX compile features
 -- Detecting CXX compile features - done
+=======
+>>>>>>> e6065ed (:sparkles: [BOJ/TREE] 11725. 트리의 부모 찾기)
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /Users/baesua/workspaces/PS_ATTACK/korsua/cmake-build-debug

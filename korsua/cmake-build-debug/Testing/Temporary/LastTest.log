@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 Start testing: Jun 25 14:52 KST
 ----------------------------------------------------------
 End testing: Jun 25 14:52 KST
@@ -7,3 +8,8 @@ Start testing: Jun 20 17:58 KST
 ----------------------------------------------------------
 End testing: Jun 20 17:58 KST
 >>>>>>> 7d696df (:sparkles: [BOJ/DP] 1509 팰린드롬 분할)
+=======
+Start testing: Jun 22 19:14 KST
+----------------------------------------------------------
+End testing: Jun 22 19:14 KST
+>>>>>>> e6065ed (:sparkles: [BOJ/TREE] 11725. 트리의 부모 찾기)
