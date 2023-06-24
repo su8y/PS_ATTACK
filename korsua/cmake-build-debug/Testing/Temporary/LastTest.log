@@ -2,6 +2,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Start testing: Jun 25 14:52 KST
 ----------------------------------------------------------
 End testing: Jun 25 14:52 KST
@@ -25,3 +26,8 @@ Start testing: Jun 23 21:03 KST
 ----------------------------------------------------------
 End testing: Jun 23 21:03 KST
 >>>>>>> 1a96a37 (:sparkles: [BOJ/SCC,TOPOLY] 1108 검색엔진)
+=======
+Start testing: Jun 25 08:35 KST
+----------------------------------------------------------
+End testing: Jun 25 08:35 KST
+>>>>>>> dd03d3d (:sparkles: [BOJ/Topology] 2252 줄 세우기)
