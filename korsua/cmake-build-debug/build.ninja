@@ -61,14 +61,14 @@ build CMakeFiles/out.dir/main.cpp.o: CXX_COMPILER__out_Debug /Users/baesua/works
 
 
 #############################################
-# Link the executable out
+# Link the executable ======out
 
-build out: CXX_EXECUTABLE_LINKER__out_Debug CMakeFiles/out.dir/main.cpp.o
+build ======out: CXX_EXECUTABLE_LINKER__out_Debug CMakeFiles/out.dir/main.cpp.o
   FLAGS = -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -mmacosx-version-min=13.2
   OBJECT_DIR = CMakeFiles/out.dir
   POST_BUILD = :
   PRE_LINK = :
-  TARGET_FILE = out
+  TARGET_FILE = ======out
   TARGET_PDB = out.dbg
 
 
@@ -97,6 +97,8 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
+build out: phony ======out
+
 # =============================================================================
 # Folder targets.
 
@@ -105,7 +107,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /Users/baesua/workspaces/PS_ATTACK/korsua/cmake-build-debug
 
-build all: phony out
+build all: phony ======out
 
 # =============================================================================
 # Built-in targets

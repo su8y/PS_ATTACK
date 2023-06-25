@@ -5,3 +5,4 @@ Main*.*
 종만북스터디
 CMakeLists.txt
 input.txt
+cmake-build-debug/*
