@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 Start testing: Jun 25 14:52 KST
 ----------------------------------------------------------
 End testing: Jun 25 14:52 KST
@@ -37,3 +38,8 @@ Start testing: Jun 25 10:51 KST
 ----------------------------------------------------------
 End testing: Jun 25 10:51 KST
 >>>>>>> b4ecd68 (:sparkles: [BOJ/PREFIX_SUM]1806 부분합)
+=======
+Start testing: Jun 25 14:02 KST
+----------------------------------------------------------
+End testing: Jun 25 14:02 KST
+>>>>>>> dbaba4e (:sparkles: [BOJ/DP&TopologySort] 1005 ACM Craft)
