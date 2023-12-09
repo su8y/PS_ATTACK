@@ -1,4 +1,4 @@
-package korsua.arrays.twoPointer;
+package korsua.dataStructure.arrays.twoPointer;
 
 import java.io.BufferedReader;
 import java.io.IOException;

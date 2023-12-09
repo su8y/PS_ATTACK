@@ -1,4 +1,4 @@
-package korsua.arrays;
+package korsua.dataStructure.arrays;
 
 public class MergeSortClass {
     /**

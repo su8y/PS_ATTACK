@@ -1,4 +1,4 @@
-package korsua.linkedlist.leetcode;
+package korsua.dataStructure.linkedlist.leetcode;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;

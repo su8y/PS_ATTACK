@@ -1,4 +1,4 @@
-package korsua.arrays;
+package korsua.dataStructure.arrays;
 
 import java.util.LinkedList;
 import java.util.Queue;

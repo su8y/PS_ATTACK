@@ -1,4 +1,4 @@
-package korsua.tree.leetcode;
+package korsua.dataStructure.tree.leetcode;
 
 import java.util.Vector;
 

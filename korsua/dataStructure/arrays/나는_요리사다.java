@@ -1,4 +1,4 @@
-package korsua.arrays;
+package korsua.dataStructure.arrays;
 
 import java.io.BufferedReader;
 import java.io.IOException;

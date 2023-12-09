@@ -1,4 +1,4 @@
-package korsua.queue;
+package korsua.dataStructure.queue;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package korsua.tree.boj;
+package korsua.dataStructure.tree.boj;
 
 import java.io.BufferedReader;
 import java.io.IOException;

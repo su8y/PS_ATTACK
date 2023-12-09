@@ -1,4 +1,4 @@
-package korsua.arrays;
+package korsua.dataStructure.arrays;
 
 public class SortColorsClass {
     private static void swap(int[] arr, int a , int b){

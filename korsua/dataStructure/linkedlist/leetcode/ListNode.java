@@ -1,4 +1,4 @@
-package korsua.linkedlist.leetcode;
+package korsua.dataStructure.linkedlist.leetcode;
 
 public class ListNode {
     int val;
