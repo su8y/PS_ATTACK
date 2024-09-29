@@ -1,8 +1,5 @@
 /*
- * 작성일	: 2023년 3월 2일
- * 문 제 	: 백준 1937번 - 욕심쟁이 판다
- * 		  https://www.acmicpc.net/problem/1937
- * 
+ * 문제 : 백준 1937번 - 욕심쟁이 판다 (https://www.acmicpc.net/problem/1937)
  * 문제 풀이
  * 	n*n 크기의 대나무 숲을 반복문으로 돌면서 그 위치를 판다를 처음 풀어놓는 위치로,
  * 	대나무 숲과 같은 크기의 배열 dp에는 판다가 이동할 수 있는 경로의 최대 이동 횟수를 저장
@@ -10,16 +7,12 @@
  * 	다음 장소의 dp에 저장되어 있는 값이 없으면 재귀호출로 해당 경로의 최대 이동 횟수를 구함
  */
 
-package _2023_03_02;
+package Baekjoon;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
+import java.io.*;
 import java.util.stream.Stream;
 
-public class 욕심쟁이판다 {
+public class BOJ_1937_욕심쟁이판다 {
 	// public class Main {
 	static int n;
 	static int bamboo[][];

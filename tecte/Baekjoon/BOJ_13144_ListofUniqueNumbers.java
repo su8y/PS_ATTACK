@@ -6,14 +6,14 @@
  *  끝 포인트가 수열의 끝을 가리키면 시작 포인트를 오른쪽으로 하나씩 이동하며 시작 포인트와 끝 포인트 사이의 모든 연속된 경우의 수를 구해서 더함
  */
 
-package baekjoon;
+package Baekjoon;
 
 import java.io.*;
 import java.util.HashSet;
 import java.util.stream.Stream;
 
-// public class Main {
-public class ListOfUniqueNumbers {
+public class BOJ_13144_ListofUniqueNumbers {
+    // public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));

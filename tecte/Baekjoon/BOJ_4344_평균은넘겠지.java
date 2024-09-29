@@ -9,8 +9,8 @@ package Baekjoon;
 import java.io.*;
 import java.util.stream.Stream;
 
-// public class  Main {
-public class 평균은넘겠지 {
+public class BOJ_4344_평균은넘겠지 {
+    // public class  Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));

@@ -10,15 +10,15 @@
  *  만약 x가 승리하기 위해 지어야하는 건물이라면 반복문을 빠져나오며 그 건물의 dp값 출력
  */
 
-package baekjoon;
+package Baekjoon;
 
 import java.io.*;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
-// public class Main {
-public class ACMCraft {
+public class BOJ_1005_ACMCraft {
+    // public class Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));

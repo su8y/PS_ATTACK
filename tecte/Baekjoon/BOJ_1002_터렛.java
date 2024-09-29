@@ -16,8 +16,8 @@ package Baekjoon;
 import java.io.*;
 import java.util.stream.Stream;
 
-// public class  Main {
-public class 터렛 {
+public class BOJ_1002_터렛 {
+    // public class  Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));

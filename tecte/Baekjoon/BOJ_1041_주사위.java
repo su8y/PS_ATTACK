@@ -1,5 +1,5 @@
 /*
- * 문 제 : 백준 1041번 - 주사위 (https://www.acmicpc.net/problem/1041)
+ * 문 제 : 백준 1041번 - 줄 서기 (https://www.acmicpc.net/problem/1041)
  * 문제 풀이
  *  N=1 인 정육면체는 하나의 면만 빼고 나머지 부분을 더하면 되지만 N이 2이상인 경우
  *  N*N*N 크기의 정육면체에서 위쪽의 4개의 꼭짓점이 주사위의 3면이 보이고 정육면체의 모서리 부분이 주사위의 2면이 보인고 그 외 나머지 부분이 주사위의 1면만 보임
@@ -12,8 +12,8 @@ package Baekjoon;
 import java.io.*;
 import java.util.Arrays;
 
-// public class  Main {
-public class 주사위 {
+public class BOJ_1041_주사위 {
+    // public class  Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));

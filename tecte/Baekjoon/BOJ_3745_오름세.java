@@ -12,8 +12,8 @@ package Baekjoon;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-// public class Main {
-public class 오름세 {
+public class BOJ_3745_오름세 {
+    // public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 

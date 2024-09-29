@@ -9,8 +9,8 @@ package Baekjoon;
 import java.io.*;
 import java.util.stream.Stream;
 
-// public class  Main {
-public class 알파벳 {
+public class BOJ_1987_알파벳 {
+    // public class  Main {
     static int r;
     static int c;
     static int[][] board;

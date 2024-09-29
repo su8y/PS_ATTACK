@@ -11,8 +11,8 @@ package Baekjoon;
 import java.io.*;
 import java.util.*;
 
-// public class  Main {
-public class 뉴스전하기 {
+public class BOJ_1135_뉴스전하기 {
+    // public class  Main {
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));

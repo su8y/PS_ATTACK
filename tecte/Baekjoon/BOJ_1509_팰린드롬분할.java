@@ -10,8 +10,8 @@ package Baekjoon;
 
 import java.io.*;
 
-// public class  Main {
-public class 팰린드롬분할 {
+public class BOJ_1509_팰린드롬분할 {
+    // public class  Main {
     static String[] str;
     static boolean[][] checkPalindrome; // 팰린드롬인지 확인하는 배열
     static int[] dp; // 팰린드롬의 최소 개수를 저장하는 배열
