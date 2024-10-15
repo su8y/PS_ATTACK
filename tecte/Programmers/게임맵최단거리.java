@@ -1,92 +1,59 @@
 /*
- * 작성일	: 2022년 12월 28일
- * 문 제 	: 프로그래머스 - 게임 맵 최단거리
- * 		  https://school.programmers.co.kr/learn/courses/30/lessons/1844
- * 
- * dfs방식으로 풀면 프로그래머스에 제출시 정확성 테스트는 통과하나 효율성 테스트에서 시간 초과가 떠 틀렸다고 뜸
+ * 문제 : 프로그래머스 - 게임 맵 최단거리 (https://school.programmers.co.kr/learn/courses/30/lessons/1844)
+ *  문제 풀이
+ *  dfs 방식으로 풀면 프로그래머스에 제출시 정확성 테스트는 통과하나 효율성 테스트에서 시간 초과가 떠 틀렸다고 뜸.
  */
 
-package _2022_12_22;
+package Programmers;
+
+import java.util.LinkedList;
+import java.util.Queue;
 
 public class 게임맵최단거리 {
-	static int[][] maps = { { 1, 0, 1, 1, 1 }, { 1, 0, 1, 0, 1 }, { 1, 0, 1, 1, 1 }, { 1, 1, 1, 0, 1 },
-			{ 0, 0, 0, 0, 1 } };
-//	static int[][] maps = { { 1, 0, 1, 1, 1 }, { 1, 0, 1, 0, 1 }, { 1, 0, 1, 1, 1 }, { 1, 1, 1, 0, 0 },
-//			{ 0, 0, 0, 0, 1 } };
+    static class Solution {
+        int[] dx = {0, 1, 0, -1};
+        int[] dy = {-1, 0, 1, 0};
+        boolean[][] visited;
 
-	public static void main(String[] args) {
-		int x = 0, y = 0;
-		int distance = 1;
+        public int solution(int[][] maps) {
+            int n = maps.length;
+            int m = maps[0].length;
+            Queue<int[]> q = new LinkedList<>();
 
-		for (int i = 0; i < maps.length; i++)
-			for (int j = 0; j < maps[0].length; j++)
-				maps[i][j] *= -1;
+            visited = new boolean[n][m];
+            q.add(new int[]{0, 0, 1});
+            visited[0][0] = true;
 
-		printMaps();
+            while (!q.isEmpty()) {
+                int[] node = q.poll();
 
-		maps[x][y] = distance;
-		dfs(x, y, distance);
+                if (node[0] == n - 1 && node[1] == m - 1)
+                    return node[2];
 
-		System.out.println("=====================");
-		printMaps();
-		System.out.println(maps[maps.length - 1][maps[0].length - 1]);
-	}
+                for (int i = 0; i < 4; i++) {
+                    int nx = node[0] + dx[i];
+                    int ny = node[1] + dy[i];
 
-	public static void dfs(int x, int y, int distance) {
-		if (x - 1 >= 0 && maps[x - 1][y] != 0) {
-			_dfs(x - 1, y, distance);
-		}
-		if (y + 1 < maps[0].length && maps[x][y + 1] != 0) {
-			_dfs(x, y + 1, distance);
-		}
-		if (x + 1 < maps.length && maps[x + 1][y] != 0) {
-			_dfs(x + 1, y, distance);
-		}
-		if (y - 1 >= 0 && maps[x][y - 1] != 0) {
-			_dfs(x, y - 1, distance);
-		}
-	}
+                    if (nx >= 0 && nx < n && ny >= 0 && ny < m) {
+                        if (maps[nx][ny] == 1 && !visited[nx][ny]) {
+                            q.add(new int[]{nx, ny, node[2] + 1});
+                            visited[nx][ny] = true;
+                        }
+                    }
+                }
+            }
 
-	public static void _dfs(int x, int y, int distance) {
-		distance++;
-		if (maps[x][y] == -1 || maps[x][y] > distance) {
-			maps[x][y] = distance;
-//			System.out.println("x : " + x + " y : " + y + " distance : " + distance);
-			dfs(x, y, distance);
-		}
-	}
+            return -1;
+        }
+    }
 
-	public static void printMaps() {
-		for (int[] i : maps) {
-			for (int j : i) {
-				System.out.printf("%3d", j);
-			}
-			System.out.println();
-		}
+    public static void main(String[] args) {
+        int[][][] testCase = {
+                {{1, 0, 1, 1, 1}, {1, 0, 1, 0, 1}, {1, 0, 1, 1, 1}, {1, 1, 1, 0, 1}, {0, 0, 0, 0, 1}},
+                {{1, 0, 1, 1, 1}, {1, 0, 1, 0, 1}, {1, 0, 1, 1, 1}, {1, 1, 1, 0, 0}, {0, 0, 0, 0, 1}}
+        };
 
-	}
+        for (int[][] test : testCase)
+            System.out.println(new Solution().solution(test));
+    }
 }
-
-/*
- * // 프로그래머스 제출 코드 class Solution { int[][] maps;
- * 
- * public int solution(int[][] maps) { this.maps = maps; int x = 0, y = 0; int
- * distance = 1;
- * 
- * for (int i = 0; i < maps.length; i++) for (int j = 0; j < maps[0].length;
- * j++) maps[i][j] *= -1;
- * 
- * maps[x][y] = distance; dfs(x, y, distance);
- * 
- * return maps[maps.length - 1][maps[0].length - 1]; }
- * 
- * public void dfs(int x, int y, int distance) { if (x - 1 >= 0 && maps[x -
- * 1][y] != 0) { _dfs(x - 1, y, distance); } if (y + 1 < maps[0].length &&
- * maps[x][y + 1] != 0) { _dfs(x, y + 1, distance); } if (x + 1 < maps.length &&
- * maps[x + 1][y] != 0) { _dfs(x + 1, y, distance); } if (y - 1 >= 0 &&
- * maps[x][y - 1] != 0) { _dfs(x, y - 1, distance); } }
- * 
- * public void _dfs(int x, int y, int distance) { distance++; if (maps[x][y] ==
- * -1 || maps[x][y] > distance) { maps[x][y] = distance; dfs(x, y, distance); }
- * } }
- */
