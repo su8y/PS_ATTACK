@@ -16,6 +16,9 @@ public class PROG_0000_template {
     }
 
     public static void main(String[] args) {
+        int[] n = {};
 
+        for (int i = 0; i < n.length; i++)
+            System.out.println(new Solution().solution());
     }
 }

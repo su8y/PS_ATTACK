@@ -9,7 +9,7 @@ package Programmers;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class 게임맵최단거리 {
+public class PROG_1844_게임맵최단거리 {
     static class Solution {
         int[] dx = {0, 1, 0, -1};
         int[] dy = {-1, 0, 1, 0};
@@ -48,12 +48,12 @@ public class 게임맵최단거리 {
     }
 
     public static void main(String[] args) {
-        int[][][] testCase = {
+        int[][][] maps = {
                 {{1, 0, 1, 1, 1}, {1, 0, 1, 0, 1}, {1, 0, 1, 1, 1}, {1, 1, 1, 0, 1}, {0, 0, 0, 0, 1}},
                 {{1, 0, 1, 1, 1}, {1, 0, 1, 0, 1}, {1, 0, 1, 1, 1}, {1, 1, 1, 0, 0}, {0, 0, 0, 0, 1}}
         };
 
-        for (int[][] test : testCase)
-            System.out.println(new Solution().solution(test));
+        for (int[][] map : maps)
+            System.out.println(new Solution().solution(map));
     }
 }
