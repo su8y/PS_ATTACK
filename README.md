@@ -5,41 +5,33 @@
 <img src="https://img.shields.io/badge/c++-00599C?style=for-the-badge&logo=c++&logoColor=white"/>
 </div>
 
-# 느리지만 꾸준히 
-⏱️ 매주 **목요일 8시** 리뷰  
+## 느려도 괜찮으니 꾸준히 
+* ⏱️ 매주 **목요일 8시** 리뷰  
+* 리뷰는 **Pull Request** 코멘트로 진행합니다.
+* **동료가 푼 문제**를 태그하여 질문을 해주세요.
+
+## 참여 방법
 * 🙇‍♂️ 리포지토리 `fork`후 폴더를 추가해주시면 됩니다. 폴더명은 `ex) nickname`으로 만들어주세요
-* 🚫 다른 팀원들의 폴더를 멋대로 `수정`하시면 안됩니다.
+* 🚫 다른 팀원들의 폴더 내용을 `수정 후 커밋` 하시면 안됩니다.
 
-## 문제 
-|----|하|중|
-|----|----|----|
-|1주차|[과제 안내신 분..?](https://www.acmicpc.net/problem/5597),[나는 요리사다](https://www.acmicpc.net/problem/2953)|----|
-|2주차|[문자열반복](https://www.acmicpc.net/problem/2675),[단어공부](https://www.acmicpc.net/problem/1157)|----|
-|3주차(기초자료구조 개념 공부하기)||----|
-|4주차(완전 탐색 알고리즘)|[일곱난쟁이](https://www.acmicpc.net/problem/2309),[게임 맵 최단 거리 ](https://school.programmers.co.kr/learn/courses/30/lessons/1844)|[MakingALargeIsland](https://leetcode.com/problems/making-a-large-island/)|
-|5주차(동적프로그래밍)|[가장긴증가하는부분수열](https://www.acmicpc.net/problem/11053)|[평범한 배낭](https://www.acmicpc.net/problem/12865)|
-|6주차(그리디)|---|---|
-|7주차(약점 보완)|---|---|
-|8주차(카카오문제풀이)|[접두사](https://www.acmicpc.net/problem/1141)|---|
-## 커밋 컨벤션 
+## 문제 풀이 컨벤션
+### 소스
+풀었던 문제 소스내용에 `문제 링크`와 `접근 방법` 및 `시간 복잡도` 등 문제 이해에 대한 정보를 작성해주세요.
 
-```bash
-git commit -m "[문제사이트/접근 유형]문제이름 (문제번호)"
-```
-
-## Pull requests 컨벤션
-* **TITLE** : " NICKNAME/ N 문제(몇 문제인지 명시)"    
+### 커밋 
+```문제 번호. 문제이름```
+  
+### Pull Requests
+* **TITLE** : " NICKNAME/ N 문제(몇 문제인지 명시)"
 * **CONTENT** : "`접근 방법`, `공부한 내용`" 정리
+* 리뷰어를 등록하여 리뷰를 요청할 수 있습니다.
 
-## 알아두면 좋은정보 (TMI)
-* 시간/공간 복잡도 계산 방법 
-* 기초 자료구조
 
-## 언젠간 `골드`가 되겠지
-[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=suby00)](https://solved.ac/suby00/)
-[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=tecte1023)](https://solved.ac/tecte1023/)
-[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=gksktl111)](https://solved.ac/gksktl111/)
-[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=ionmax5602)](https://solved.ac/ionmax5602/)
-[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=sibjagun)](https://solved.ac/sibjagun/)
-[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=tony2yoo)](https://solved.ac/tony2yoo/)
-[![Solved.ac Profile](http://mazassumnida.wtf/api/v2/generate_badge?boj=cji456)](https://solved.ac/cji456/)
+## 언젠간 `골드`가 되겠지 ( 우리들의 근황 ) 
+* su8y: [![Solved.ac Profile](http://mazassumnida.wtf/api/mini/generate_badge?boj=suby00)](https://solved.ac/suby00/)
+* tecte1023: [![Solved.ac Profile](http://mazassumnida.wtf/api/mini/generate_badge?boj=tecte1023)](https://solved.ac/tecte1023/)
+* sibjagun: [![Solved.ac Profile](http://mazassumnida.wtf/api/mini/generate_badge?boj=sibjagun)](https://solved.ac/sibjagun/)
+* gksktl111: [![Solved.ac Profile](http://mazassumnida.wtf/api/mini/generate_badge?boj=gksktl111)](https://solved.ac/gksktl111/)
+* ionmax5602: [![Solved.ac Profile](http://mazassumnida.wtf/api/mini/generate_badge?boj=ionmax5602)](https://solved.ac/ionmax5602/)
+* tony2yoo: [![Solved.ac Profile](http://mazassumnida.wtf/api/mini/generate_badge?boj=tony2yoo)](https://solved.ac/tony2yoo/)
+* cji456: [![Solved.ac Profile](http://mazassumnida.wtf/api/mini/generate_badge?boj=cji456)](https://solved.ac/cji456/)
