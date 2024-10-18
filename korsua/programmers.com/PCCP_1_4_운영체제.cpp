@@ -32,13 +32,11 @@ vector<long long> solution(vector<vector<int>> program) {
     priority_queue<vector<int>, vector<vector<int>>, cmp2> loadHeap;
     
     int i = 0;
-    pushHeap(0,startHeap, loadHeap);
     
     while(!startHeap.empty() || !loadHeap.empty()){
+        pushHeap(i,startHeap, loadHeap);
         if(loadHeap.empty()){
-            i++;
-            pushHeap(i,startHeap, loadHeap);
-            
+            i = startHeap.top()[1];
             continue;
         }
         vector<int> curr = loadHeap.top(); // score, start, during
@@ -49,8 +47,6 @@ vector<long long> solution(vector<vector<int>> program) {
         
         answer[score-1] += i - start; // 대기시간  // score starts index 1
         i += during; // during i에 추가 
-        
-        pushHeap(i,startHeap, loadHeap);
     }
     answer.insert(answer.begin(), i);
     return answer;
